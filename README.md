@@ -1,31 +1,56 @@
 # Haya – Modest Fashion Website
 
-A complete, professional e-commerce website for the modest clothing brand **Haya**.
+Elegant modest fashion brand website (Abayas, Hijabs, Long Dresses, Everyday Wear).
 
-## What’s Included
+## Current Status
 
-| File / Folder       | What it is                                      |
-|---------------------|-------------------------------------------------|
-| `index.html`        | Home page                                       |
-| `shop.html`         | Shop / all products page with filters           |
-| `product.html`      | Individual product page                         |
-| `about.html`        | About Us / brand story                          |
-| `contact.html`      | Contact form + FAQ                              |
-| `cart.html`         | Shopping cart + simple checkout                 |
-| `css/style.css`     | All the design (colors, layout, mobile look)    |
-| `js/script.js`      | Cart, filters, menus, popups                    |
-| `images/`           | Put your own product photos here later          |
+- **Phase 1**: Complete ✅  
+- **Phase 2**: In progress (waiting for your real products & contact details)
 
-## How to Open the Website
+## How to View Your Website
 
-1. Download or copy the whole folder.
-2. Double-click `index.html` — it will open in your browser.
-3. That’s it! You can click around and test everything.
+1. Go to: https://github.com/ashfaqabdullah-018/haya-modest-fashion
+2. Click on any file (for example `index.html`)
+3. Or download the whole folder and open `index.html` on your computer
 
-(Later, when you are ready to go live, you can use GitHub Pages or any web hosting.)
+## Pages Included
 
-## How to Edit Things (No Coding Knowledge Needed)
+- Home
+- Shop
+- Product details
+- About Us
+- Contact
+- Shopping Cart
 
-See the full guide in this README or ask for help.
+## How to Change Things (Very Simple)
 
-© 2026 Haya
+You do **not** need to know coding.
+
+### Change text or prices:
+- Open the file with Notepad (Windows) or TextEdit (Mac)
+- Find the words or numbers you want to change
+- Type the new text
+- Save the file
+
+### Change your contact details:
+- Open `contact.html`
+- Change the email, WhatsApp number, and Instagram
+
+### Change products:
+- Open `js/script.js`
+- Look for the product list near the bottom
+- Change name, price, or description
+
+## Next Steps (Phase 2)
+
+To make this fully your brand, please send:
+
+1. Main headline for the home page
+2. Your email, WhatsApp number, Instagram
+3. List of your real products (name + price + short description)
+
+Once you send this information, the website will be updated with your real details.
+
+---
+
+© 2026 Haya – Modest Fashion
