@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop – Haya Modest Fashion</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Haya</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="search-btn">🔍</button>
+        <a href="cart.html" class="cart-btn">🛒 <span class="cart-count">0</span></a>
+        <button class="mobile-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+  <div class="shop-header">
+    <div class="container">
+      <h1 style="font-size:2rem;font-weight:500;">Shop</h1>
+      <p style="color:#666;">Modest pieces for every day</p>
+    </div>
+  </div>
+  <div class="container" style="padding:3rem 0;">
+    <div class="product-grid" id="shopProducts"></div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><p>© 2026 Haya. All rights reserved.</p></div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('shopProducts');
+      if (!grid || !window.hayaProducts) return;
+      grid.innerHTML = window.hayaProducts.map(p => `
+        <a href="product.html?id=${p.id}" class="product-card">
+          <div class="product-image">
+            ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
+            <img src="${p.image}" alt="${p.name}" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>${p.name}</h3>
+            <div class="product-category">${p.category}</div>
+            <div class="product-price">$${p.price}</div>
+          </div>
+        </a>
+      `).join('');
+    });
+  </script>
+</body>
+</html>
