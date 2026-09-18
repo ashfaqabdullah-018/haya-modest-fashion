@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart – Haya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Haya</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn">🛒 <span class="cart-count">0</span></a>
+        <button class="mobile-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="shop-header">
+    <div class="container">
+      <h1 style="font-size:2rem;font-weight:500;">Your Cart</h1>
+    </div>
+  </section>
+
+  <div class="container" style="padding:3rem 0;">
+    <div id="cartLayout">
+      <div class="empty-cart">
+        <p style="font-size:1.2rem;">Your cart is empty</p>
+        <p>Looks like you haven’t added anything yet.</p>
+        <a href="shop.html" class="btn btn-primary">Continue Shopping</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><p>© 2026 Haya. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const layout = document.getElementById('cartLayout');
+      if (cart.length === 0) return;
+
+      const itemsHtml = cart.map(item => `
+        <div class="cart-item" style="display:flex;gap:1rem;padding:1rem;border-bottom:1px solid #eee;align-items:center;">
+          <img src="${item.image}" alt="${item.name}" style="width:80px;height:100px;object-fit:cover;border-radius:6px;">
+          <div style="flex:1;">
+            <h3>${item.name}</h3>
+            <p>Size: ${item.size} | Qty: ${item.qty}</p>
+            <button onclick="removeFromCart(${item.id}, '${item.size}')" style="color:red;background:none;border:none;cursor:pointer;">Remove</button>
+          </div>
+          <div style="font-weight:600;">$${(item.price * item.qty).toFixed(2)}</div>
+        </div>
+      `).join('');
+
+      layout.innerHTML = `
+        <div style="background:white;border-radius:8px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+          ${itemsHtml}
+        </div>
+        <div style="margin-top:1.5rem;text-align:right;">
+          <p style="font-size:1.2rem;font-weight:600;">Total: $${getCartTotal().toFixed(2)}</p>
+          <button class="btn btn-sage" style="margin-top:1rem;" onclick="alert('This is a demo checkout. Real payment can be added later.')">Proceed to Checkout</button>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

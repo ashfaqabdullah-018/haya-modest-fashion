@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product – Haya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Haya</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html" class="cart-btn">🛒 <span class="cart-count">0</span></a>
+        <button class="mobile-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="product-detail" id="productDetail">
+      <p style="padding:3rem;text-align:center;">Loading product...</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom"><p>© 2026 Haya. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get('id')) || 1;
+      const product = (window.hayaProducts || []).find(p => p.id === id);
+
+      if (!product) {
+        document.getElementById('productDetail').innerHTML = '<p style="padding:3rem;text-align:center;">Product not found. <a href="shop.html">Back to Shop</a></p>';
+        return;
+      }
+
+      document.title = product.name + ' – Haya';
+      document.getElementById('productDetail').innerHTML = `
+        <div class="product-gallery">
+          <div class="main-image">
+            <img src="${product.image}" alt="${product.name}">
+          </div>
+        </div>
+        <div class="product-details">
+          <h1>${product.name}</h1>
+          <div class="price">$${product.price}</div>
+          <p class="desc">${product.description}</p>
+          <div class="size-selector">
+            <h4>Size</h4>
+            <div class="size-options">
+              ${product.sizes.map(s => `<button class="size-btn" onclick="this.classList.toggle('active')">${s}</button>`).join('')}
+            </div>
+          </div>
+          <button class="add-to-cart-btn" onclick="addToCart({id:${product.id}, name:'${product.name}', price:${product.price}, image:'${product.image}', size:'M', qty:1})">Add to Cart</button>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>
