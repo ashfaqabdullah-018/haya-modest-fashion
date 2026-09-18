@@ -1,56 +1,38 @@
 # Haya – Modest Fashion Website
 
-Elegant modest fashion brand website (Abayas, Hijabs, Long Dresses, Everyday Wear).
+Elegant modest fashion brand (Abayas, Hijabs, Long Dresses & Everyday Wear)
 
-## Current Status
+## Project Status
 
-- **Phase 1**: Complete ✅  
-- **Phase 2**: In progress (waiting for your real products & contact details)
+| Phase | Status |
+|-------|--------|
+| Phase 1 - Website Structure | ✅ Complete |
+| Phase 2 - Content & Design | ✅ Complete (using professional sample content) |
+| Phase 3 - Make Website Live | Ready to start |
+| Phase 4 - Real Payments | Later |
 
-## How to View Your Website
+## Your Website Link (GitHub)
+https://github.com/ashfaqabdullah-018/haya-modest-fashion
 
-1. Go to: https://github.com/ashfaqabdullah-018/haya-modest-fashion
-2. Click on any file (for example `index.html`)
-3. Or download the whole folder and open `index.html` on your computer
+## How to View the Website Now
+1. Open the link above
+2. Click on `index.html`
+3. Or download the folder and open `index.html` on your computer
 
-## Pages Included
+## Important Note
+The website currently uses sample products, prices, and contact details.  
+When you are ready, just send me your real:
+- Headline
+- Email
+- WhatsApp number
+- Instagram
+- Product list (name + price)
 
-- Home
-- Shop
-- Product details
-- About Us
-- Contact
-- Shopping Cart
+I will update everything for you.
 
-## How to Change Things (Very Simple)
+## How to Change Anything Later (No Coding Needed)
+- Open any file with Notepad or TextEdit
+- Change the words or numbers
+- Save
 
-You do **not** need to know coding.
-
-### Change text or prices:
-- Open the file with Notepad (Windows) or TextEdit (Mac)
-- Find the words or numbers you want to change
-- Type the new text
-- Save the file
-
-### Change your contact details:
-- Open `contact.html`
-- Change the email, WhatsApp number, and Instagram
-
-### Change products:
-- Open `js/script.js`
-- Look for the product list near the bottom
-- Change name, price, or description
-
-## Next Steps (Phase 2)
-
-To make this fully your brand, please send:
-
-1. Main headline for the home page
-2. Your email, WhatsApp number, Instagram
-3. List of your real products (name + price + short description)
-
-Once you send this information, the website will be updated with your real details.
-
----
-
-© 2026 Haya – Modest Fashion
+© 2026 Haya
