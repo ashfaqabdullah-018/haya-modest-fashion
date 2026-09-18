@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haya – Elegant Modest Fashion</title>
+  <meta name="description" content="Haya – Modest, high-quality clothing for women. Abayas, hijabs, long dresses and everyday modest wear.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Haya</a>
+      
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="search-btn" aria-label="Search">🔍</button>
+        <a href="cart.html" class="cart-btn" aria-label="Cart">
+          🛒 <span class="cart-count">0</span>
+        </a>
+        <button class="mobile-toggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH OVERLAY -->
+  <div class="search-overlay">
+    <div class="search-box">
+      <input type="text" placeholder="Search abayas, hijabs, dresses..." id="searchInput">
+      <button onclick="window.location.href='shop.html'">Search</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Modest elegance,<br>made for everyday</h1>
+      <p>Thoughtfully designed abayas, hijabs and long dresses that feel as good as they look. Quality fabric, calm colors, lasting comfort.</p>
+      <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Pieces</h2>
+        <p>Our most loved modest essentials</p>
+      </div>
+      <div class="product-grid" id="featuredProducts">
+        <!-- Products loaded by JS -->
+      </div>
+      <div class="text-center mt-2">
+        <a href="shop.html" class="btn btn-outline">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND STORY TEASER -->
+  <section class="section">
+    <div class="container">
+      <div class="story-teaser">
+        <div class="story-image">
+          <span style="padding:2rem;text-align:center;">Your Brand Photo<br>Goes Here</span>
+        </div>
+        <div class="story-content">
+          <h2>Our Story</h2>
+          <p>Haya was created for women who want clothing that honors modesty without compromising on quality or comfort. Every piece is chosen with care — soft fabrics, thoughtful cuts, and timeless colors that work for real life.</p>
+          <a href="about.html" class="btn btn-sage">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Customers Say</h2>
+        <p>Real feedback from women who wear Haya</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"The black abaya is so soft and the fit is perfect. I wear it almost every day. Quality is excellent."</p>
+          <div class="testimonial-author">— Aisha R.</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Finally found hijabs that stay in place and feel light. The cream one is my favorite. Highly recommend."</p>
+          <div class="testimonial-author">— Fatima K.</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Beautiful packaging and the dress arrived quickly. Modest, elegant and comfortable — exactly what I wanted."</p>
+          <div class="testimonial-author">— Mariam S.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Join the Haya Circle</h2>
+      <p>Get early access to new collections and exclusive offers</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Haya</h4>
+          <p style="font-size:0.9rem;margin-bottom:1rem;opacity:0.8;">Elegant modest fashion for the modern woman. Quality, comfort, and beauty in every piece.</p>
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram">IG</a>
+            <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">WA</a>
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">All Products</a>
+          <a href="shop.html">Abayas</a>
+          <a href="shop.html">Hijabs</a>
+          <a href="shop.html">Dresses</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="contact.html">Contact Us</a>
+          <a href="contact.html">Shipping & Returns</a>
+          <a href="contact.html">Size Guide</a>
+          <a href="contact.html">FAQs</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="about.html">Our Values</a>
+          <a href="contact.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Haya. All rights reserved. Modest fashion with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- NEWSLETTER POPUP -->
+  <div class="popup-overlay">
+    <div class="popup">
+      <button class="popup-close">×</button>
+      <h3>Welcome to Haya</h3>
+      <p>Join our list and get 10% off your first order plus early access to new arrivals.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required style="width:100%;padding:0.8rem;margin-bottom:0.8rem;border:1px solid #E8E4DE;border-radius:8px;">
+        <button type="submit" class="btn btn-sage" style="width:100%;">Get My Discount</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('featuredProducts');
+      if (!grid || !window.hayaProducts) return;
+
+      window.hayaProducts.slice(0, 4).forEach(p => {
+        grid.innerHTML += `
+          <a href="product.html?id=${p.id}" class="product-card">
+            <div class="product-image">
+              ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
+              <img src="${p.image}" alt="${p.name}" loading="lazy">
+            </div>
+            <div class="product-info">
+              <h3>${p.name}</h3>
+              <div class="product-category">${p.category}</div>
+              <div class="product-price">
+                $${p.price}
+                ${p.oldPrice ? `<span class="old">$${p.oldPrice}</span>` : ''}
+              </div>
+            </div>
+          </a>
+        `;
+      });
+    });
+  </script>
+</body>
+</html>
